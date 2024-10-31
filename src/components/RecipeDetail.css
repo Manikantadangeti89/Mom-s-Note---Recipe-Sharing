@@ -1,0 +1,43 @@
+/* RecipeDetail.css */
+.recipe-detail-container {
+    max-width: 800px; /* Limit the width for readability */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Add padding */
+    background-color: #fff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.recipe-detail-title {
+    font-size: 2em; /* Larger font for title */
+    margin-bottom: 10px; /* Spacing below title */
+    color: #343a40; /* Darker text color */
+    text-align: center;
+}
+
+.recipe-detail-image {
+    width: 100%; /* Full width for responsiveness */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below image */
+}
+
+.recipe-detail-summary {
+    font-size: 1.1em; /* Slightly larger font for summary */
+    line-height: 1.6; /* Increased line height for readability */
+    color: #495057; /* Lighter text color */
+    margin-bottom: 20px; /* Spacing below summary */
+}
+
+.recipe-detail-ingredients {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.recipe-detail-ingredients li {
+    background-color: #f8f9fa; /* Light background for ingredients */
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px; /* Padding inside ingredient boxes */
+    margin: 5px 0; /* Spacing between ingredients */
+    font-size: 1em; /* Standard font size */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}

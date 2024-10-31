@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Positions items on the left and right */
+    align-items: center;            /* Centers items vertically */
+    background-color: #2c3e50;     /* Background color */
+    padding: 15px;                  /* Padding around the navbar */
+    color: white;                   /* Text color */
+  }
+  
+  .app-name {
+    font-size: 1.8em;               /* Font size for app name */
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 20px;
+  }
+  
+  .nav-links {
+    list-style: none;               /* Removes bullet points from the list */
+    display: flex;                  /* Displays list items in a row */
+    margin: 0;                      /* Removes default margin */
+    padding: 0;                     /* Removes default padding */
+  }
+  
+  .nav-links li {
+    margin-left: 20px;              /* Adds space between nav items */
+  }
+  
+  .nav-links a {
+    color: white;                   /* Text color for links */
+    text-decoration: none;          /* Removes underline from links */
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;    
+  }
+
+
+  
+  
+  

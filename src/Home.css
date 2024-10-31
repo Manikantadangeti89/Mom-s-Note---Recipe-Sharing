@@ -1,0 +1,50 @@
+/* Home.css */
+
+/* Home.css */
+
+.home-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('./bg4.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fdfaf6; /* Light beige to match the food tones */
+}
+
+.overlay {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(64, 32, 16, 0.8); /* Rich brown for a warm overlay */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.quote {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fdfaf6; /* Light beige to match the text with the image colors */
+  margin-bottom: 20px;
+}
+
+.recipe-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fdfaf6; /* Matching the light beige for consistency */
+  background-color: #b85c38; /* Warm terracotta to complement the food colors */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recipe-button:hover {
+  background-color: #9c472b; /* Darker shade of terracotta on hover */
+}

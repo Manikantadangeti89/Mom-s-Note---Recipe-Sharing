@@ -1,38 +1,78 @@
+/* App specific styles */
+body{
+  background-color: #f5f3ef;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .about-div{
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+} */
+
+
+.about-div {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 30px;
+  padding-top: 40px; /* Additional top padding */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  line-height: 1.6; /* Improves readability */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-div h1 {
+  font-size: 2rem; /* Larger font size for the title */
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.about-div p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.about-div ul {
+  padding-left: 20px; /* Add some space for list items */
+}
+
+
+/* Navbar styles */
+.navbar {
+  /* background-color: #313031; */
+  background-color: #8b7d6b;
+  padding: 15px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a {
+  margin: 0 15px;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Recipe card styles */
+.recipe-card {
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.recipe-title {
+  font-size: 1.25em;
+  margin: 10px 0;
 }

@@ -1,0 +1,39 @@
+.recipe-list {
+    background-color: #f5f3ef;
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between the boxes */
+    padding: 20px; /* Padding around the recipe list */
+  }
+  
+  .recipe-card {
+    border: 1px solid #dee2e6; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Inner padding */
+    background-color: #ffffff; /* Background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center the content */
+    transition: box-shadow 0.3s ease;
+  }
+
+  .recipe-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+  }
+  
+  .recipe-card img {
+    max-width: 100%; /* Image should not exceed card width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Round image corners */
+  }
+  
+  .recipe-title {
+    font-size: 1.25em; /* Size of recipe title */
+    margin-top: 10px; /* Space above the title */
+  }
+   
+
+
+
+
+
+ 
