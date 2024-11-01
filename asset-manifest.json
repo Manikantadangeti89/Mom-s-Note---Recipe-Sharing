@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Mom-s-Note---Recipe-Sharing/static/css/main.943f1826.css",
+    "main.js": "/Mom-s-Note---Recipe-Sharing/static/js/main.33079261.js",
+    "static/media/bg4.webp": "/Mom-s-Note---Recipe-Sharing/static/media/bg4.5c03ccea55312c79974d.webp",
+    "index.html": "/Mom-s-Note---Recipe-Sharing/index.html",
+    "main.943f1826.css.map": "/Mom-s-Note---Recipe-Sharing/static/css/main.943f1826.css.map",
+    "main.33079261.js.map": "/Mom-s-Note---Recipe-Sharing/static/js/main.33079261.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.943f1826.css",
+    "static/js/main.33079261.js"
+  ]
+}
