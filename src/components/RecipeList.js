@@ -9,15 +9,24 @@ function RecipeList() {
 
   const fetchRecipes = async (query) => {
     try {
-      const response = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=b1295af4c5e9467badbcc92adcd835ad`); 
-      setRecipes(response.data.results);
+      const dbResponse = await axios.get(`/api/recipes?query=${query}`); 
+      const dbRecipes = dbResponse.data;
+
+      const spoonacularResponse = await axios.get(
+        `https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=b1295af4c5e9467badbcc92adcd835ad`
+      );
+      const apiRecipes = spoonacularResponse.data.results;
+
+      const allRecipes = [...dbRecipes, ...apiRecipes];
+
+      setRecipes(allRecipes);
     } catch (error) {
       console.error('Error fetching recipes:', error);
     }
   };
 
   useEffect(() => {
-    fetchRecipes('');
+    fetchRecipes(''); 
   }, []);
 
   return (
@@ -25,7 +34,7 @@ function RecipeList() {
       <SearchBar onSearch={fetchRecipes} />
       <div className="recipe-list">
         {recipes.map((recipe) => (
-          <Recipe key={recipe.id} recipe={recipe} />
+          <Recipe key={recipe.id || recipe._id} recipe={recipe} />
         ))}
       </div>
     </div>
@@ -33,5 +42,3 @@ function RecipeList() {
 }
 
 export default RecipeList;
-
-

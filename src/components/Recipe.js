@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Recipe.css'; // Ensure this file is imported
+import './Recipe.css'; 
 
 function Recipe({ recipe }) {
+  const recipeId = recipe._id || recipe.id;
+  
   return (
-    <div className="recipe-card"> {/* Add the recipe-card class here */}
-      <Link to={`/recipes/${recipe.id}`}>
-        <img src={recipe.image} alt={recipe.title} />
+    <div className="recipe-card">
+      <Link to={`/recipes/${recipeId}`}>
+        <img src={recipe.image || recipe.imageUrl} alt={recipe.title} />
         <h3 className="recipe-title">{recipe.title}</h3>
       </Link>
     </div>
@@ -14,3 +16,4 @@ function Recipe({ recipe }) {
 }
 
 export default Recipe;
+
